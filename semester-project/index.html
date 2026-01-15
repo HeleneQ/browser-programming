@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Web application for tracking habits with streak system and visualization of progress">
+        <meta name="keywords" content="habits, productivity, personal development, tracking, streaks">
+        <meta name="author" content="Hélène Quernet">
+        <title>StreakFlow - Build better habits, one day at a time</title>
+
+    </head>
+
+    <body>
+        <a href="#main">Aller au contenu principal</a>
+        
+        <header>
+            <h1>StreakFlow</h1>
+            <nav>
+                <a href="/"><strong>StreakFlow</strong></a>
+                <ul>
+                    <li><a href="#dashboard">Features</a></li>
+                    <li><a href="#habits">My Habits</a></li>
+                    <li><a href="#stats">Statistics</a></li>
+                    <li><a href="#setting">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <article id="today">
+                <h2 id="today-heading">Today - Date</h2>
+                <p>3 of 5 habits completed</p>
+
+                <form>
+                    <fieldset>
+                        <legend>Mark today's habits as complete</legend>
+
+                        <ul>
+                            <li>
+                            <input type="checkbox" id="habit-1" name="habit-1" checked>
+                            <label for="habit-1">Morning Exercise</label>
+                            <span>12 day streak</span>
+                            </li>
+                            <li>
+                            <input type="checkbox" id="habit-2" name="habit-2">
+                            <label for="habit-2">Read 30 Minutes</label>
+                            <span>5 day streak</span>
+                            </li>
+                            <li>
+                            <input type="checkbox" id="habit-3" name="habit-3" checked>
+                            <label for="habit-3">Drink 8 Glasses of Water</label>
+                            <span>30 day streak</span>
+                            </li>
+                            <li>
+                            <input type="checkbox" id="habit-4" name="habit-4">
+                            <label for="habit-4">Meditate 10 Minutes</label>
+                            <span>0 day streak</span>
+                            </li>
+                            <li>
+                            <input type="checkbox" id="habit-5" name="habit-5">
+                            <label for="habit-5">Journal Before Bed</label>
+                            <span>3 day streak</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+
+            </article>
+
+
+            <section id="week">
+                <h2 id="week-heading">This Week Habits</h2>
+
+                <figure>
+                    <table>
+                    <caption>Habit completion for January 9–15, 2026</caption>
+                    <thead>
+                        <tr>
+                        <th scope="col">Habit</th>
+                        <th scope="col">Thu 9</th>
+                        <th scope="col">Fri 10</th>
+                        <th scope="col">Sat 11</th>
+                        <th scope="col">Sun 12</th>
+                        <th scope="col">Mon 13</th>
+                        <th scope="col">Tue 14</th>
+                        <th scope="col">Wed 15</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">Morning Exercise</th>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Missed</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Read 30 Minutes</th>
+                        <td>Done</td>
+                        <td>Missed</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Drink 8 Glasses of Water</th>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Meditate 10 Minutes</th>
+                        <td>Missed</td>
+                        <td>Missed</td>
+                        <td>Done</td>
+                        <td>Missed</td>
+                        <td>Missed</td>
+                        <td>Missed</td>
+                        <td>Pending</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Journal Before Bed</th>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Missed</td>
+                        <td>Done</td>
+                        <td>Done</td>
+                        <td>Pending</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <figcaption>Weekly overview showing completion status for each habit</figcaption>
+                </figure>
+            </section>
+
+            <section id="statistics">
+                <h2 id="stats">Statistics</h2>
+
+                <section>
+                    <h3 id="global-stats-heading">Overall Progress</h3>
+                    <dl>
+                    <dt>Total Habits</dt>
+                    <dd>5</dd>
+
+                    <dt>Weekly Completion Rate</dt>
+                    <dd>74%</dd>
+
+                    <dt>Best Current Streak</dt>
+                    <dd>30 days (Drink 8 Glasses of Water)</dd>
+
+                    <dt>Total Days Tracked</dt>
+                    <dd>45 days</dd>
+                    </dl>
+                </section>
+
+                <section>
+                    <h3 id="best-habit-heading">Top Performer</h3>
+                    <dl>
+                    <dt>Habit</dt>
+                    <dd>Drink 8 Glasses of Water</dd>
+
+                    <dt>Current Streak</dt>
+                    <dd>30 days</dd>
+
+                    <dt>Best Streak</dt>
+                    <dd>30 days</dd>
+
+                    <dt>Completion Rate</dt>
+                    <dd>100%</dd>
+                    </dl>
+                </section>
+
+                <section>
+                    <h3 id="needs-attention-heading">Needs Attention</h3>
+                    <dl>
+                    <dt>Habit</dt>
+                    <dd>Meditate 10 Minutes</dd>
+
+                    <dt>Current Streak</dt>
+                    <dd>0 days</dd>
+
+                    <dt>Best Streak</dt>
+                    <dd>3 days</dd>
+
+                    <dt>Completion Rate</dt>
+                    <dd>28%</dd>
+                    </dl>
+                </section>
+            </section id="create-habit">
+                <h2 id="new-habit">Add a new Habit</h2>
+
+                <form>
+                    <fieldset>
+                        <legend>Habit Details</legend>
+
+                        <p>
+                            <label for="habit-name">Habit Name (required)</label>
+                            <input type="text" id="habit-name" name="habit-name" maxlength="50" required>
+                        </p>
+
+                        <p>
+                            <label for="habit-description">Description (optional)</label>
+                            <textarea id="habit-description" name="habit-description" maxlength="200"></textarea>
+                        </p>
+
+                        <p>
+                            <label for="habit-category">Category</label>
+                            <select id="habit-category" name="habit-category">
+                            <option value="health">Health</option>
+                            <option value="productivity">Productivity</option>
+                            <option value="personal">Personal</option>
+                            <option value="social">Social</option>
+                            <option value="finance">Finance</option>
+                            <option value="learning">Learning</option>
+                            </select>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Choose a Color</legend>
+                        <ul>
+                            <li>
+                            <input type="radio" id="color-red" name="habit-color" value="red">
+                            <label for="color-red">Red</label>
+                            </li>
+                            <li>
+                            <input type="radio" id="color-orange" name="habit-color" value="orange">
+                            <label for="color-orange">Orange</label>
+                            </li>
+                            <li>
+                            <input type="radio" id="color-yellow" name="habit-color" value="yellow">
+                            <label for="color-yellow">Yellow</label>
+                            </li>
+                            <li>
+                            <input type="radio" id="color-green" name="habit-color" value="green" checked>
+                            <label for="color-green">Green</label>
+                            </li>
+                            <li>
+                            <input type="radio" id="color-blue" name="habit-color" value="blue">
+                            <label for="color-blue">Blue</label>
+                            </li>
+                            <li>
+                            <input type="radio" id="color-purple" name="habit-color" value="purple">
+                            <label for="color-purple">Purple</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Create Habit</button>
+                </form>
+            <section>
+
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <h2>About StreakFlow</h2>
+                <p>HabitFlow is a simple habit tracking application designed to help you build and maintain positive daily routines. Track your progress, monitor streaks, and achieve your goals.</p>
+
+                <h2>Quicks links</h2>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#preview">Preview</a></li>
+                    <li><a href="#stats">Statistics</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Contact heading</h2>
+                <address>Questions? Reach us at <a href="mailto:support@habitflow.com">support@habitflow.com</a></address>
+            </section>
+
+            <p><small>© 2026 HabitFlow. All rights reserved.</small></p>
+        
+        </footer>
+    </body>
+</html>
