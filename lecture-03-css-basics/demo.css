@@ -1,0 +1,143 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+* { box-sizing: border-box; }
+
+:root {
+  --pad: 16px;
+  --bg: #f6f6f6;
+  --border: #333;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #c1a0b3;
+  padding: 24px;
+  line-height: 1.5;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px dashed #ccc;
+  background: #fff;
+}
+
+.intro { margin-bottom: 2rem; }
+
+/* 1. Rule anatomy */
+.note { color: steelblue; font-size: 20px; }
+
+/* 2. Selectors */
+.kicker { letter-spacing: 1px; }
+.lead { font-size: 18px; }
+#warning { color: crimson; }
+
+/* 3. Grouping & descendant */
+h4, p { margin: 0; }
+.card p { color: #555; }
+
+/* 4. Pseudo-classes */
+.btn:hover { text-decoration: underline; }
+.list li:nth-child(odd) { background: #f2f2f2; }
+
+/* 5. Pseudo-elements */
+.tag::before { content: "★ "; }
+.tag::after { content: " ✔"; }
+
+/* 6. Specificity */
+p { color: green; }
+.a { color: blue; }
+#x { color: red; }
+
+/* 7. Units */
+.box { font-size: 20px; border: 1px solid #000; padding: 10px; width: 60%; }
+.em { font-size: 1em; }
+.rem { font-size: 1rem; }
+
+/* 8. Colors */
+.c1 { color: rebeccapurple; }
+.c2 { color: #1e90ff; }
+.c3 { background: rgba(255,99,71,0.3); padding: 6px; }
+
+/* 9. Box model */
+.panel {
+  width: 200px;
+  padding: 20px;
+  border: 4px solid #333;
+  margin: 12px;
+  background: #eee;
+}
+
+/* 10. Display */
+.pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #444;
+  margin-right: 6px;
+}
+
+/* 11. Positioning */
+.wrap { position: relative; width: 320px; }
+.photo { width: 100%; display: block; }
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: gold;
+  padding: 4px 8px;
+}
+
+/* 12. Flexbox */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cell { border: 1px solid #333; padding: 10px; }
+
+/* 13. Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* 14. Media query */
+.layout { padding: 12px; border: 1px solid #333; }
+@media (min-width: 768px) {
+  .layout { font-size: 22px; padding: 24px; }
+}
+
+/* 15. Transition */
+.cta {
+  padding: 10px 14px;
+  border: 1px solid #333;
+  background: white;
+  cursor: pointer;
+  transition: transform 200ms, background 200ms;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  background: #eee;
+}
+
+/* 16. Animation */
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #333;
+  animation: bounce 700ms infinite alternate;
+}
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+/* 17. CSS Variables */
+.theme {
+  padding: var(--pad);
+  background: var(--bg);
+  border: 2px solid var(--border);
+}
