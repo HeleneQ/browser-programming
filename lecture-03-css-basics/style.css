@@ -1,5 +1,5 @@
 :root {
-    --primary: #2563eb;
+    --primary: #283445;
     --text: #1f2937;
     --text-light: #6b7280;
     --bg: #ffffff;
@@ -71,15 +71,46 @@ nav a:hover {
 
 /*Main*/
 
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
 
+section {
+    width: 75%;
+    justify-content: center;
+}
+
+section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--text-light);
+}
 
 img {
     max-width: 100%;
     height: auto;
 }
 
-ul {
-    list-style: georgian;
-}
 
 
