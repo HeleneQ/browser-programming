@@ -1,10 +1,5 @@
 :root {
-    --primary: #283445;
-    --text: #1f2937;
-    --text-light: #6b7280;
-    --bg: #ffffff;
-    --bg-alt: #f3f4f6;
-    --border: #e5e7eb;
+  --main-text:rgb(78, 74, 74)
 }
 
 * {
@@ -18,75 +13,106 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text);
-    background: #ccc;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color:rgb(44, 14, 14);
     line-height: 1.5;
 }
 /*Header*/
 
+a#skipper {
+  position:fixed;
+  top:0;
+  left:0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:5%;
+  width: 100%;
+
+  background-color: rgb(191, 192, 186);
+  color: rgb(44, 14, 14);
+  text-decoration: none;
+  text-align: center;
+
+  border:solid 2px rgb(44, 14, 14);
+
+  text-transform: uppercase;
+}
+
 header {
-    background: var(--primary);
-    color: white;
+    background: rgb(44, 14, 14);
+    color: rgb(191, 192, 186);
     text-align: center;
     padding: 3rem 1rem;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-decoration: underline;
     margin-bottom: 0.5rem;
 }
 
 header h2 {
-    font-weight: 400;
+    font-weight: 50;
     opacity: 0.9;
+}
+
+header p {
+  font-size: 0.8rem;
+}
+
+header p strong{
+  text-transform:uppercase;
 }
 
 /*Navigation*/
 
 nav {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
+  background: rgb(191, 192, 186);
+  color:rgb(44, 14, 14);
+  border: 2px solid rgb(44, 14, 14)
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 10rem;
     padding: 1rem;
     flex-wrap: wrap;
 }
 
 nav a {
-    color: var(--text);
+    color: rgb(44, 14, 14);
     text-decoration: none;
     padding: 0.5rem;
 }
 
 nav a:hover {
-    color: var(--primary);
+    text-decoration-line:underline;
 }
 
 /*Main*/
 
 main {
-  max-width: 900px;
+  max-width: 90%;
+  background-color: rgb(191, 192, 186);
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
 }
 
 section {
-    width: 75%;
+    width: 80%;
+    margin:0 auto;
     justify-content: center;
 }
 
 section h2 {
+  color:var(--main-text);
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--primary);
   display: inline-block;
   padding-bottom: 0.25rem;
 }
@@ -94,57 +120,89 @@ section h2 {
 section p {
   margin-bottom: 1rem;
   text-align: justify;
+  color:var(--main-text);
+  font-size: 0.9rem;
 }
 
 h3 {
   font-size: 1.25rem;
   margin: 1.5rem 0 0.75rem;
+  color:var(--main-text);
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin: 1rem 0 0.5rem;
-  color: var(--text-light);
+  color:var(--main-text);
+}
+
+main a {
+  text-decoration: none;
+  border-radius: 2rem;
+  padding:0.5rem;
+  margin:1rem 0;
+  color:var(--main-text);
+}
+
+main a:hover {
+  text-decoration: none;
+  background-color: rgb(44, 14, 14);
+  border-radius: 2rem;
+  padding:0.5rem;
+  margin:1rem 0;
+  color:rgb(191, 192, 186);
 }
 
 
 /*Figures*/
 
 figure {
-  margin: 1rem 0;
-  background: var(--bg-alt);
-  border-radius: 0.5rem;
+  display:block;
+  justify-content: center;
+  padding-top: 1rem;
+  background: var(--main-text);
+  border-radius: 3rem;
   overflow: hidden;
-  display: inline-block;
-  max-width: 300px;
-  margin-right: 1rem;
+  max-width: 80%;
+  margin: 1rem auto;
+}
+
+figure img{
+  display: block;
+  width: 60%;
+  margin:0 auto;
+  border-radius: 2rem;
 }
 
 figcaption {
+  width: 95%;
   padding: 0.75rem;
-  font-size: 0.875rem;
-  color: var(--text-light);
+  font-size: 0.75rem;
+  color: rgb(191, 192, 186);
   text-align: center;
 }
 
 figure iframe {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 16 / 9;
   border: none;
 }
 
-.dress-grid {
+.dress {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 1rem;
+  gap: 0;
   max-width: 500px;
   margin: 1rem auto;
+  border:2px dashed var(--main-text);
 }
 
 .dress figure {
   margin: 0;
   max-width: 100%;
+  border: 2px solid rgb(191, 192, 186);
+  border-radius: 0;
 }
 
 .dress figure:nth-child(1) {
@@ -171,9 +229,11 @@ figure iframe {
 }
 
 
-/*Listes*/
+/*Lists*/
 section ul {
     padding-left: 1.5rem;
+    text-align: left;
+    color:var(--main-text)
 }
 
 section ul li {
@@ -181,16 +241,9 @@ section ul li {
     padding-left: 0.5rem;
 }
 
-section ul li::before {
-    content: "•";
-    color: var(--primary);
-    margin-right: 0.5rem;
-}
-
 /* ---- Footer ---- */
 footer {
-    background: var(--text);
-    color: white;
+    color:rgb(191,192,186);
     padding: 2rem 1rem;
     text-align: center;
 }
