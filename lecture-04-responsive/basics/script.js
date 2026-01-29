@@ -20,9 +20,11 @@ const btnToggle = document.getElementById("btnToggle");
 btnToggle.onclick = function () {
     if (btnToggle.innerText === "OFF") {
         btnToggle.innerText = "ON";
+        btn.Toggle.style.backgroungColor ="green";
     }
     else {
         btnToggle.innerText = "OFF";
+        btn.Toggle.style.backgroungColor ="crimson";
     }
 };
 
@@ -114,7 +116,7 @@ btnCheck.onclick = function () {
         msgOut.style.color = "crimson";
     }
     else {
-        msgOut.innerText = "You typed: " + msgInput;
+        msgOut.innerText = "You typed: " + text;
         msgOut.style.color = "green";
     }
 }
