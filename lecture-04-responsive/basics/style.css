@@ -1,8 +1,5 @@
-/* Basic, readable styling (not a redesign) */
-
-* {
-  box-sizing: border-box;
-}
+/* Minimal styling for readability (not a redesign) */
+* { box-sizing: border-box; }
 
 body {
   font-family: Arial, sans-serif;
@@ -11,15 +8,12 @@ body {
 }
 
 .container {
-  width: min(900px, 92%);
+  width: min(950px, 92%);
   margin: 0 auto;
   padding: 16px 0;
 }
 
-.subtitle {
-  margin-top: 4px;
-  color: #555;
-}
+.subtitle { margin-top: 4px; color: #555; }
 
 .card {
   border: 1px solid #ddd;
@@ -28,13 +22,19 @@ body {
   margin: 16px 0;
 }
 
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 button {
   padding: 10px 14px;
   cursor: pointer;
-  margin-right: 8px;
 }
 
-#output, #counterValue {
-  margin-top: 10px;
-  font-size: 18px;
+input {
+  padding: 10px 12px;
+  width: 160px;
 }
