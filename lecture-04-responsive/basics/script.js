@@ -43,6 +43,10 @@ const btnReset = document.getElementById("btnReset");
 
 const counterValue = document.getElementById("counterValue")
 
+function renderCount(){
+    counterValue.innerText = String(count);
+}
+
 btnMinus.onclick = function () {
     count = count - 1;
     renderCount();
@@ -58,9 +62,7 @@ btnReset.onclick = function () {
     renderCount();
 }
 
-function renderCount(){
-    counterValue.innerText = String(count);
-}
+renderCount();
 
 //Ex5
 
@@ -98,8 +100,10 @@ const msgInput = document.getElementById("msgInput");
 const btnCheck = document.getElementById("btnCheck");
 const msgOut = document.getElementById("msgOut");
 
-const text = msgInput.value.trim();
+
 btnCheck.onclick = function () {
+    const text = msgInput.value.trim();
+
     if (text === "") {
         msgOut.innerText = "Please type something.";
         msgOut.style.color = "crimson";
