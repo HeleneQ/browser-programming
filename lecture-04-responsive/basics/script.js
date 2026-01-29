@@ -36,7 +36,7 @@ btnBgReset.onclick = function () {
 }
 
 //Ex4
-
+let count = 0;
 const btnMinus = document.getElementById("btnMinus");
 const btnPlus = document.getElementById("btnPlus");
 const btnReset = document.getElementById("btnReset");
@@ -59,7 +59,7 @@ btnReset.onclick = function () {
 }
 
 function renderCount(){
-    counterValue.innerText = "Count: " + count;
+    counterValue.innerText = string(count);
 }
 
 //Ex5
@@ -108,3 +108,19 @@ btnCheck.onclick = function () {
         msgOut.style.color = "green";
     }
 }
+
+//Ex8
+
+const btnHappy = document.getElementById("btnHappy");
+const btnSad = document.getElementById("btnSad");
+const moodOut = document.getElementById("moodOut");
+
+btnHappy.onclick = function () {
+    moodOut.innerText = "Mood: Happy 😊";
+    moodOut.style.color = "green";
+};
+
+btnSad.onclick = function () {
+    moodOut.innerText = "Mood: Sad 😢";
+    moodOut.style.color = "blue";
+};
