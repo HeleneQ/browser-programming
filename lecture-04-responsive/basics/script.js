@@ -16,14 +16,13 @@ btnName.onclick = function () {
 //Ex2
 
 const btnToggle = document.getElementById("btnToggle");
-const toggleOut = document.getElementById("toggleOut");
 
 btnToggle.onclick = function () {
-    if (toggleOut.innerText === "OFF") {
-        toggleOut.innerText = "ON";
+    if (btnToggle.innerText === "OFF") {
+        btnToggle.innerText = "ON";
     }
     else {
-        toggleOut.innerText = "OFF";
+        btnToggle.innerText = "OFF";
     }
 };
 
