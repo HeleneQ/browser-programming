@@ -1,5 +1,6 @@
 :root {
-  --main-text:rgb(78, 74, 74)
+  --main-text:rgb(78, 74, 74);
+  --main-back-color:rgb(44,14,14);
 }
 
 * {

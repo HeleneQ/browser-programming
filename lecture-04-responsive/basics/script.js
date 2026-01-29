@@ -20,11 +20,11 @@ const btnToggle = document.getElementById("btnToggle");
 btnToggle.onclick = function () {
     if (btnToggle.innerText === "OFF") {
         btnToggle.innerText = "ON";
-        btnToggle.style.backgroungColor ="green";
+        btnToggle.style.backgroundColor ="green";
     }
     else {
         btnToggle.innerText = "OFF";
-        btnToggle.style.backgroungColor ="crimson";
+        btnToggle.style.backgroundColor ="crimson";
     }
 };
 
@@ -33,6 +33,10 @@ btnToggle.onclick = function () {
 
 const btnBg = document.getElementById("btnBg");
 const btnBgReset = document.getElementById("btnBgReset");
+const btnCardBg = document.getElementById("btnCardBg");
+const btnCardBgReset = document.getElementById("btnCardBgReset");
+
+const Card3 = document.getElementById("card3");
 
 btnBg.onclick = function () {
     document.body.style.backgroundColor = "lavender";
@@ -40,6 +44,14 @@ btnBg.onclick = function () {
 
 btnBgReset.onclick = function () {
     document.body.style.backgroundColor = "";
+}
+
+btnCardBg.onclick = function () {
+    Card3.style.backgroundColor = "pink";
+}
+
+btnCardBgReset.onclick = function () {
+    Card3.style.backgroundColor = "";
 }
 
 //Ex4
