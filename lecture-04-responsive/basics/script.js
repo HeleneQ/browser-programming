@@ -59,7 +59,7 @@ btnReset.onclick = function () {
 }
 
 function renderCount(){
-    counterValue.innerText = string(count);
+    counterValue.innerText = String(count);
 }
 
 //Ex5
