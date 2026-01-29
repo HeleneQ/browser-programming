@@ -20,11 +20,11 @@ const btnToggle = document.getElementById("btnToggle");
 btnToggle.onclick = function () {
     if (btnToggle.innerText === "OFF") {
         btnToggle.innerText = "ON";
-        btn.Toggle.style.backgroungColor ="green";
+        btnToggle.style.backgroungColor ="green";
     }
     else {
         btnToggle.innerText = "OFF";
-        btn.Toggle.style.backgroungColor ="crimson";
+        btnToggle.style.backgroungColor ="crimson";
     }
 };
 
