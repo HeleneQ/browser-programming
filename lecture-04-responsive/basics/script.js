@@ -2,9 +2,15 @@
 
 const btnName = document.getElementById("btnName");
 const nameOut = document.getElementById("nameOut");
+const nameInput = document.getElementById("nameInput")
 
 btnName.onclick = function () {
-    nameOut.innerText = "Helene";
+    const text = nameInput.value.trim();
+    if (text === "") {
+        alert("Please write your name !")
+    } else {
+        nameOut.innerText = text;
+    }
 };
 
 //Ex2
