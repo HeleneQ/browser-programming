@@ -98,8 +98,9 @@ const msgInput = document.getElementById("msgInput");
 const btnCheck = document.getElementById("btnCheck");
 const msgOut = document.getElementById("msgOut");
 
+const text = msgInput.value.trim();
 btnCheck.onclick = function () {
-    if (msgInput === "") {
+    if (text === "") {
         msgOut.innerText = "Please type something.";
         msgOut.style.color = "crimson";
     }
