@@ -1,6 +1,10 @@
 :root {
-  --main-text:rgb(78, 74, 74);
-  --main-back-color:rgb(44,14,14);
+  --main-text:rgb(104, 142, 116);
+  --main-back-color:rgb(132, 163, 140);
+  --clear-text:rgb(191,192,186);
+  --dark:rgb(20, 20, 30);
+  --dark-text:rgb(200, 200, 210);
+  --border:rgb(80, 80, 100);
 }
 
 * {
@@ -16,7 +20,7 @@ html {
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    background-color:rgb(44, 14, 14);
+    background-color:var(--main-back-color);
     line-height: 1.5;
 }
 /*Header*/
@@ -32,19 +36,19 @@ a#skipper {
   height:5%;
   width: 100%;
 
-  background-color: rgb(191, 192, 186);
-  color: rgb(44, 14, 14);
+  background-color: var(--clear-text);
+  color: var(--main-back-color);
   text-decoration: none;
   text-align: center;
 
-  border:solid 2px rgb(44, 14, 14);
+  border:solid 2px var(--main-back-color);
 
   text-transform: uppercase;
 }
 
 header {
-    background: rgb(44, 14, 14);
-    color: rgb(191, 192, 186);
+    background: var(--main-back-color);
+    color: var(--clear-text);
     text-align: center;
     padding: 3rem 1rem;
 }
@@ -71,9 +75,9 @@ header p strong{
 /*Navigation*/
 
 nav {
-  background: rgb(191, 192, 186);
-  color:rgb(44, 14, 14);
-  border: 2px solid rgb(44, 14, 14)
+  background: var(--clear-text);
+  color:var(--main-back-color);
+  border: 2px solid var(--main-back-color);
 }
 
 nav ul {
@@ -85,7 +89,7 @@ nav ul {
 }
 
 nav a {
-    color: rgb(44, 14, 14);
+    color: var(--main-back-color);
     text-decoration: none;
     padding: 0.5rem;
 }
@@ -98,7 +102,7 @@ nav a:hover {
 
 main {
   max-width: 90%;
-  background-color: rgb(191, 192, 186);
+  background-color: var(--clear-text);
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
@@ -147,11 +151,11 @@ main a {
 
 main a:hover {
   text-decoration: none;
-  background-color: rgb(44, 14, 14);
+  background-color: var(--main-back-color);
   border-radius: 2rem;
   padding:0.5rem;
   margin:1rem 0;
-  color:rgb(191, 192, 186);
+  color:var(--clear-text);
 }
 
 
@@ -179,7 +183,7 @@ figcaption {
   width: 95%;
   padding: 0.75rem;
   font-size: 0.75rem;
-  color: rgb(191, 192, 186);
+  color: var(--clear-text);
   text-align: center;
 }
 
@@ -202,7 +206,7 @@ figure iframe {
 .dress figure {
   margin: 0;
   max-width: 100%;
-  border: 2px solid rgb(191, 192, 186);
+  border: 2px solid var(--clear-text);
   border-radius: 0;
 }
 
@@ -244,7 +248,7 @@ section ul li {
 
 /* ---- Footer ---- */
 footer {
-    color:rgb(191,192,186);
+    color:var(--clear-text);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -260,5 +264,124 @@ footer p {
 
 footer a {
     color: #93c5fd;
+}
+
+/*Buttons*/
+
+button {
+    background-color: var(--main-back-color);
+    color: rgb(191, 192, 186);
+    border: 2px solid var(--main-back-color);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--clear-text);
+    color: var(--main-back-color);
+}
+
+#theme-toggle {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+#contact-btn {
+    margin-bottom: 1rem;
+}
+
+
+/*DARK MODE*/
+
+body.dark-mode {
+    background-color: var(--dark);
+}
+
+body.dark-mode header {
+    background: var(--dark);
+    color: var(--dark-text);
+}
+
+body.dark-mode nav {
+    background: rgb(40, 40, 55);
+    border-color: rgb(60, 60, 80);
+}
+
+body.dark-mode nav a {
+    color: var(--dark-text);
+}
+
+body.dark-mode main {
+    background-color: rgb(35, 35, 50);
+}
+
+body.dark-mode section h2,
+body.dark-mode section h3,
+body.dark-mode section h4,
+body.dark-mode section p,
+body.dark-mode section ul {
+    color: var(--dark-text);
+}
+
+body.dark-mode figure {
+    background: rgb(50, 50, 70);
+}
+
+body.dark-mode figcaption {
+    color: var(--dark-text);
+}
+
+body.dark-mode main a {
+    color: rgb(150, 180, 220);
+}
+
+body.dark-mode main a:hover {
+    background-color: rgb(60, 60, 80);
+    color: var(--dark-text);
+}
+
+body.dark-mode footer {
+    color: var(--dark-text);
+}
+
+body.dark-mode button {
+    background-color: rgb(60, 60, 80);
+    color: var(--dark-text);
+    border-color: var(--border);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--border);
+    color: var(--dark-text);
+}
+
+body.dark-mode .dress {
+    border-color: var(--border);
+}
+
+body.dark-mode a#skipper {
+  position:fixed;
+  top:0;
+  left:0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:5%;
+  width: 100%;
+
+  background-color: rgb(35,35,50);
+  color: var(--dark-text);
+  text-decoration: none;
+  text-align: center;
+
+  border:solid 2px var(--dark-text);
+
+  text-transform: uppercase;
 }
 
