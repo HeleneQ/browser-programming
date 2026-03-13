@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <a id="skipper" href="#main">Skip to content</a>
+    <h1>Weather App</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Portfolio</a></li>
+            <li><a href="#kuopio-weather">Kuopio Weather</a></li>
+            <li><a href="#other-city">Search a City</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+    
+    <main id="main">
+        <section id="kuopio-weather">
+            <p>Current weather data from a public API.</p>
+            <div>
+                <h2>Quick access to Kuopio Weather</h2>
+                <button id="btnKuopio">Kuopio</button>
+            </div>
+        </section>
+
+        <section id="other-city">
+            <h2>Search for a city</h2>
+
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Enter at least 3 characters..."
+                    list="cityList"
+                    autocomplete="off"
+                >
+                <datalist id="cityList"></datalist>
+                <p>Type at least 3 characters to see suggestions</p>
+            </div>
+
+            <div class="buttons">
+                <button id="btnValidate" disabled>Get Weather</button>
+            </div>
+        </section>
+
+        <section id="results">
+            <div id="weatherBox">
+                <h2>Results</h2>
+                <p><strong>City:</strong> <span id="city">-</span></p>
+                <p><strong>Temperature:</strong> <span id="temperature">-</span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind">-</span></p>
+            </div>
+        </section>
+
+        <pre id="output"></pre>
+    
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <button id="contact-btn">Quick Contact Info</button>
+        <p>Finnish email: <a href="mailto:helene.quernet@edu.savonia.fi">helene.quernet@edu.savonia.fi</a></p>
+        <p>French email: <a href="mailto:helene.quernet@etu.estia.fr">helene.quernet@etu.estia.fr</a></p>
+        <p><a href="https://github.com/HeleneQ">GitHub account</a></p>
+        <p><a href="https://www.instagram.com/lelene.qrnt/">Private Instagram Account</a></p>
+        <p>© 2026 Hélène Quernet</p>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
