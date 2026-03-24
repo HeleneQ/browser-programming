@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Note App</h1>
+
+        <div class="note-form">
+            <h2>Write Your Note</h2>
+            <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+            <button id="addBtn" class="btn btn-primary">Add Note</button>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="list_note" class="notes-list">
+            <div class="loading">Loading notes...</div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
